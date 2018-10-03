@@ -1,0 +1,22 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:eslint:20180222':
+    - eslint-config-itp-base > eslint:
+        reason: None given
+        expires: '2018-11-02T15:15:12.264Z'
+  'npm:shelljs:20140723':
+    - eslint-config-itp-base > eslint > shelljs:
+        reason: None given
+        expires: '2018-11-02T15:15:12.265Z'
+    - eslint-config-itp-base > eslint-plugin-import > eslint > shelljs:
+        reason: None given
+        expires: '2018-11-02T15:15:12.265Z'
+    - eslint-config-itp-base > eslint-config-airbnb-base > eslint > shelljs:
+        reason: None given
+        expires: '2018-11-02T15:15:12.265Z'
+    - eslint-config-itp-base > eslint-config-airbnb-base > eslint-plugin-import > eslint > shelljs:
+        reason: None given
+        expires: '2018-11-02T15:15:12.265Z'
+patch: {}

@@ -23,7 +23,7 @@
   "author": "In The Pocket",
   "license": "MIT",
   "dependencies": {
-    "eslint-config-itp-base": "^1.0.0",
+    "eslint-config-itp-base": "^1.1.0",
     "redis": "~2.6.3"
   }
 }
