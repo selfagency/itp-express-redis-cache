@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.14.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:eslint:20180222':
@@ -19,4 +19,12 @@ ignore:
     - eslint-config-itp-base > eslint-config-airbnb-base > eslint-plugin-import > eslint > shelljs:
         reason: None given
         expires: '2018-11-02T15:15:12.265Z'
-patch: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - eslint-config-itp-base > eslint > lodash:
+        patched: '2020-05-07T05:40:18.138Z'
+    - eslint-config-itp-base > eslint > inquirer > lodash:
+        patched: '2020-05-07T05:40:18.138Z'
+    - eslint-config-itp-base > eslint > table > lodash:
+        patched: '2020-05-07T05:40:18.138Z'
